@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class MSDynamicsDrawerViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
+@property (strong, nonatomic) UISplitViewController *splitViewController;
+
+- (void)openSideMenu;
+- (void)closeMenu;
 
 
 @end
